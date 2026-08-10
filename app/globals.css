@@ -66,6 +66,7 @@ header ul li a{
   overflow-y: auto;
   transform-origin: top;
   transition: max-height .3s, transform .3s;
+  border-radius: 5px;
 }
 
 .nav-links-mobile a{
@@ -84,6 +85,10 @@ header ul li a{
 
 .white{
   color: white;
+}
+
+.business{
+  color: var(--business-color);
 }
 
 .white:hover{
@@ -164,6 +169,95 @@ header ul li a{
 .getting_started:hover{
   color: white;
   background-color: var(--business-color);
+}
+
+.form-panel{
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  width: 100%;
+  border-radius: 24px;
+  font-weight: normal;
+  /* color: var(--business-color); */
+}
+
+.form-panel img{
+  /* object-fit: contain; */
+  height: 480px;
+  border-radius: 24px;
+  margin-left: -45px;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F5F2;
+  border-radius: 24px;
+  width: 35%;
+  padding: 20px 50px;
+}
+
+.form-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-content label{
+  margin-bottom: 10px;
+  color: var(--business-color);
+}
+
+.form-content input{
+  margin-bottom: 10px;
+  border: 1px #ccc solid;
+  outline: none;
+  padding: 15px 15px;
+  border-radius: 5px;
+  width: 85%;
+}
+
+.form-content input:hover{
+  margin-bottom: 10px;
+  border-color: var(--business-color);
+}
+
+.form-content button{
+  width: 92%;
+  padding: 15px;
+  background-color: var(--business-color);
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.form-content button:hover{
+  background-image: linear-gradient(135deg, #FFFFFF17 0%, #FFFFFF00 100%);
+  
+}
+
+.form-container h2{
+  font-size: 35px;
+  font-weight: normal;
+  text-align: center;
+  color: var(--business-color);
+}
+
+.extra-form{
+  margin-top: 15px;
+}
+
+.extra-form a{
+  text-decoration: none;
+  color: var(--business-color);
+}
+
+.extra-form a:hover{
+  opacity: 90%;
 }
 
 .services{
@@ -351,5 +445,27 @@ footer{
 
   .hamburger{
     display: block;
+  }
+
+  .form-panel{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-container{
+    width: 80%;
+    border-radius: 10px;
+  }
+
+  .form-container input{
+    width: inherit;
+  }
+
+  .form-content button{
+    width: 100%;
+  }
+
+  .form-panel img{
+    display: none;
   }
 }

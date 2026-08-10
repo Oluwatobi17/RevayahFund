@@ -1,11 +1,11 @@
 import Image from 'next/image'
-import Penguin from '../../public/penguin.png';
+import Penguin2 from '../../public/penguin2.png';
 
 export default function Footer(){
     return <footer>
         <div>
             <div>
-                <Image src={Penguin} alt="Logo" /> 
+                <Image src={Penguin2} alt="Logo" /> 
 
                 <p>+234 816 571 1302</p>
 

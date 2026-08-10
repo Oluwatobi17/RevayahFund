@@ -3,7 +3,7 @@ import Header from './Header';
 
 export default function Navigator(){
     return <nav>
-        <Header navColor="white"/>
+        <Header navColor="white" whiteLogo={true}/>
 
         <div className='banner'>
             <h1>Your Trusted 
