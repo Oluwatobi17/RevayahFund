@@ -33,7 +33,7 @@ export default function Signup(){
                 </form>
             </div>
 
-            <Image src={Investment} alt="Login Image" />
+            <Image src={Investment} alt="Signup Image" />
         </div>
 
         <Footer />

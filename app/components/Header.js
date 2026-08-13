@@ -11,8 +11,10 @@ export default function Header({navColor, whiteLogo}){
 
     return <header>
         <div>
-            {whiteLogo && <Image src={Penguin2} alt="Logo" />}
-            {!whiteLogo && <Image src={Penguin} alt="Logo" />}
+            <a href='/'>
+                {whiteLogo && <Image src={Penguin2} alt="Logo" />}
+                {!whiteLogo && <Image src={Penguin} alt="Logo" />}
+            </a>
         </div>
 
         <ul className='nav-links'>

@@ -11,7 +11,7 @@ export default function Navigator(){
                 Asset Manager
             </h1>
             
-            <a href='' className='getting_started'>Get Started</a>
+            <a href='/signup' className='getting_started'>Get Started</a>
         </div>
     </nav>
 }

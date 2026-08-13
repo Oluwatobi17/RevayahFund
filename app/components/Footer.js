@@ -20,8 +20,8 @@ export default function Footer(){
             <p>© 2026 Revayah Fund. All Rights Reserved</p>
 
             <ul>
-                <li> <a href='/terms'>Terms</a> </li>
-                <li> <a href='/privacy'>Privacy</a> </li>
+                <li> <a href='/terms-and-conditions'>Terms</a> </li>
+                <li> <a href='/privacy-policy'>Privacy</a> </li>
             </ul>
         </div>
     </footer>
