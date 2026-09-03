@@ -1,5 +1,6 @@
 :root{
   --business-color: #014086;
+  --business-color-whitish: #024796;
 }
 
 body{
@@ -421,6 +422,135 @@ header ul li a{
   opacity: 90%;
   /* color: aliceblue;
   background-color: var(--business-color); */
+}
+
+.side-nav-top{
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.side-nav-top h2{
+  margin-top: 5px;
+}
+
+.dashboard{
+  display: flex;
+  flex-direction: row;
+}
+
+.dashboard-name{
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+.sidenav-a{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.sidenav-a a{
+  text-decoration: none;
+  color: white;
+  /* opacity: 0.8; */
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  margin: 10px 0px;
+  border-radius: 7px;
+}
+
+.sidenav-a a svg{
+  margin-right: 10px;
+}
+
+.sidenav-a a:hover, .sidenav-a a:active{
+  opacity: 1;
+  background-color: var(--business-color-whitish);
+}
+
+.sidenav{
+  background-color: var(--business-color);
+  width: 20%;
+  height: 100vh;
+  padding: 30px;
+  /* position: fixed; */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0);
+}
+
+/* .sidenav.open {
+  transform: translateX(0);
+} */
+
+.earnings-info{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  width: 100%;
+}
+
+.earning-tab{
+  width: 28%;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  padding: 10px 20px;
+  max-height: fit-content;
+}
+
+.earning-tab h2{
+  margin: 10px 0px;
+}
+
+.postive-increament{
+  color: green;
+}
+
+.negative-increament{
+  color: red;
+}
+
+.earning-tab h4{
+  color: #6c6b6b;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.earning-tab h5{
+  font-weight: normal;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.dashboard-hb{
+  font-size: 2em;
+  color: var(--business-color);
+  margin: 20px 25px;
+  cursor: pointer;
+}
+
+.dashboard-body{
+  display: flex;
+  flex-direction: column;
+  width: 73%;
+}
+
+.dashboard-body2{
+  display: flex;
+  flex-direction: column;
+  width: 88%;
+}
+
+.right{
+  text-align: right;
 }
 
 footer{
